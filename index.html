@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <div>
+      <h1 class="animate__animated animate__fadeIn animate__zoomIn">Quiz App</h1>
+    </div>
+    <div class="container animate__animated animate__bounceIn" id="formQuiz">
+      <form action="" >
+        <div class="form-group">
+          <select name="" id="chooseCategory" class="animate__animated animate__fadeInUp">
+            <option value="choose category">Choose Category</option>
+            <option value="27">Animals</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+            <option value="24">Politics</option> 
+            <option value="22">Geography</option>
+            <option value="25">Art</option>
+            <option value="20">Mythology</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="" id="chooseDifficulty" class="animate__animated animate__fadeInUp">
+            <option value="choose Difficulty level">Choose Difficulty Level</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select name="" id="numberOfQuestion" class="animate__animated animate__fadeInUp">
+            <option value="number of question">Number of Questions</option>
+            <option value="3">3 Questions</option>
+            <option value="5">5 Questions</option>
+            <option value="10">10 Questions</option>
+          </select>
+        </div>
+        <button type="button" class="animate__animated animate__zoomIn" id="buttonStart">Start</button>
+      </form>
+    </div>
+      <div>
+        <div id = "dataRow"></div>
+      </div>
+  </main>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

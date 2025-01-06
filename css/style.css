@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6f61, #e6c542);
+    overflow: hidden;
+}
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 5px;
+    animation: fadeInDown 1.5s ease-out, zoomIn 1.5s ease-in-out;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    width: 800px;
+    max-width: 450px;
+    animation: bounceIn 1s;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+.container:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+.form-group {
+    margin-bottom: 10px;
+}
+select, button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+select {
+    background-color: #f9f9f9;
+    border-color: #ccc;
+}
+select:focus {
+    outline: none;
+    border-color: #ff6f61;
+    background-color: #fff;
+}
+button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+    background-color: #ff5733;
+}
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 87, 51, 0.8);
+}
+select:hover {
+    border-color: #ff5733;
+    transform: scale(0.9);
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.stats button {
+    background-color: #ffffff;
+    border: none;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.stats button:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.card {
+    background: #ffffff;
+    width: 90%;
+    max-width: 700px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+.card h2 {
+    font-size: 1.08rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.answers button {
+    background-color: #f87f83;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.answers button:hover {
+    background-color: #fa8072;
+    transform: scale(1.05);
+}
+.next-btn {
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.next-btn:hover {
+    background-color: #555;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#categoryAndScoreFinal ,
+#questionCountFinal {
+    width: 300px;
+} 
+
